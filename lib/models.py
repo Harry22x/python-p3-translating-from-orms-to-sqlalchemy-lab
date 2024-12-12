@@ -11,3 +11,11 @@ class Dog(Base):
     id = Column(Integer(), primary_key=True)
     name = Column(String())
     breed = Column(String())
+
+
+    def __repr__(self):
+        return f"Dog {self.id}:"\
+            +f"name {self.name}:",\
+            +f"breed{self.breed}:"\
+    
+
